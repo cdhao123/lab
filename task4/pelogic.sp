@@ -1,0 +1,27 @@
+
+.PARAM CLOAD = 0
+M0 Z CLK 0 0 N_50n L = 50N W = 500N
+M1 X A Z 0 N_50n L = 50N W = 500N
+M2 Y B X 0 N_50n L = 50N W = 500N
+M3 Y CLK VDD VDD P_50n L = 50N W = 250N
+CL Y 0 CLOAD
+
+VCLK CLK 0 PULSE 0 1 1.995N 0.01N 0.01N 2N 4N
+VDD VDD 0 1
+VA A 0 PWL(0ns 0 6ns 0 6.01ns 1 8ns 1 8.01ns 0 14ns 0 14.01ns 1)
+VB B 0 PWL 0 0 6N 0 6.01N 1 8N 1 8.01N 0 10N 0 10.01N 1 12N 1 12.01N 0 14N 0 14.01N 1 16N 1
+
+.INCLUDE '..\model1\rf018.l'
+* .DC VIN 0 1 0.001
+.TRAN 0.001N 16N START = 0
+
+.measure tran thl when V(Y) = 0.5 fall = 1
+.measure tran tlh when V(Y) = 0.5 rise = 1
+
+.OPTION LIST NODE BRIEF=1 
+.OPTION POST=3
+
+.ALTER
+.PARAM CLOAD = 1F
+
+.END

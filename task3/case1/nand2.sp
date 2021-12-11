@@ -12,6 +12,9 @@ VDD VDD 0 1
 * .DC VIN 0 1 0.001
 .TRAN 0.01N 40N START = 0
 
+.measure tran thl when V(N6) = 0.5 fall = 1
+.measure tran tlh when V(N6) = 0.5 rise = 1
+
 .OPTION LIST NODE BRIEF=1 
 .OPTION POST=3
 
