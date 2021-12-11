@@ -1,0 +1,20 @@
+* "simulator" "HSPICE" 
+* "version" "O-2018.09-SP2 win64"
+* "format" "HSP"
+* "rundate" "10:59:22 11/28/2021 "
+* "netlist" "nand2delay.sp "
+* "runtitle" ""
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ vdd =   1.0000        
++ vina =   0.            
++ vinb =   1.0000        
++ vm0d =   3.8201u       
++ vm4d =  38.9424u       
++ vout = 999.9667m       
++ vout2 =  76.1043u       
+***   END: Saved Operating Point ***                     

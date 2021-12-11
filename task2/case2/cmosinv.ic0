@@ -1,0 +1,16 @@
+* "simulator" "HSPICE" 
+* "version" "O-2018.09-SP2 win64"
+* "format" "HSP"
+* "rundate" "15:21:01 11/12/2021 "
+* "netlist" "cmosinv.sp "
+* "runtitle" ""
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ vdd =   1.0000        
++ vin =   0.            
++ vout = 999.9848m       
+***   END: Saved Operating Point ***                     

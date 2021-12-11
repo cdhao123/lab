@@ -1,0 +1,99 @@
+ ****** HSPICE -- O-2018.09-SP2 win64 (Feb 25 2019) ******                      
+  Copyright (c) 1986 - 2021 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: dff.sp                                                            
+  Command line options: C:\synopsys\Hspice_O-2018.09-SP2\WIN64\hspice.com -i dff.sp -o C:\sdsy\task3\case2\dff.lis
+  Start time: Sat Dec  4 15:28:02 2021
+  lic:  
+  lic: FLEXlm: SDK_11.7.3 
+  lic: USER:   admin                HOSTNAME: DESKTOP-3KO7170 
+  lic: HOSTID: "d83bbfb49802"       PID:      24468 
+  lic: Using FLEXlm license file: 
+  lic: 27000@DESKTOP-3KO7170 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2029/2019.2019 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@DESKTOP-3KO7170 
+  lic:   
+  **info** (dff.sp:51) DC voltage reset to initial transient source value in source 0:vclk. new dc=0.0000D+00
+  
+      
+
+Element variations(Local):   element              parameter
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+ **info** dc convergence successful at Newton-Raphson method 
+1****** HSPICE -- O-2018.09-SP2 win64 (Feb 25 2019) ******                      
+ ******  
+ 
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:clk     =   0.      0:clkb    = 999.9222m 0:m34d    =  57.8758u
+ +0:m38d    =   3.8229u 0:n1      =  31.4167u 0:n10     = 999.9131m
+ +0:n11     =  37.9639u 0:n12     = 999.9427m 0:n2      = 999.9667m
+ +0:n3      =  72.6844u 0:n4      = 999.8358m 0:n5      = 113.9696u
+ +0:n6      = 999.8774m 0:n7      = 999.8358m 0:n8      =  37.9760u
+ +0:n9      = 999.9830m 0:rst     =   1.0000  0:vdd     =   1.0000 
+ +0:vin     =   0.     
+
+ ******
+ 
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ thl=  15.1042n
+ tlh=  25.1494n
+
+          ***** job concluded
+ ******  
+ 
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     8
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =     172 # elements   =      42
+  # resistors   =       0 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      38 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.02           1          41
+  transient          0.40        7001        1607         636 rev=        35
+  readin             0.02
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         60.73 megabytes
+           total cpu time            0.45 seconds
+           total elapsed time        0.52 seconds
+           job started at     15:28:02 12/04/2021
+           job ended   at     15:28:03 12/04/2021
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.05(s)

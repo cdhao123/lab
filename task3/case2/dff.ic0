@@ -1,0 +1,32 @@
+* "simulator" "HSPICE" 
+* "version" "O-2018.09-SP2 win64"
+* "format" "HSP"
+* "rundate" "15:28:02 12/04/2021 "
+* "netlist" "dff.sp "
+* "runtitle" ""
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ clk =   0.            
++ clkb = 999.9222m       
++ m34d =  57.8758u       
++ m38d =   3.8229u       
++ n1 =  31.4167u       
++ n10 = 999.9131m       
++ n11 =  37.9639u       
++ n12 = 999.9427m       
++ n2 = 999.9667m       
++ n3 =  72.6844u       
++ n4 = 999.8358m       
++ n5 = 113.9696u       
++ n6 = 999.8774m       
++ n7 = 999.8358m       
++ n8 =  37.9760u       
++ n9 = 999.9830m       
++ rst =   1.0000        
++ vdd =   1.0000        
++ vin =   0.            
+***   END: Saved Operating Point ***                     

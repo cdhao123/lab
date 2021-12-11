@@ -1,0 +1,55 @@
+****** HSPICE -- O-2018.09-SP2 win64 (Feb 25 2019) ******
+Input File: supper_buffer.sp
+lic:
+lic: FLEXlm: SDK_11.7.3
+lic: USER:   admin                HOSTNAME: DESKTOP-3KO7170
+lic: HOSTID: "d83bbfb49802"       PID:      29264
+lic: Using FLEXlm license file:
+lic: 27000@DESKTOP-3KO7170
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 30-dec-2029/2019.2019
+lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@DESKTOP-3KO7170
+lic:
+
+ init: begin read circuit files, cpu clock= 3.20E-02
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/behave/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/AD/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/XILINX/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/TLINE/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/TI/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/SIGNET/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/PCI/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/LIN_TECH/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/PET/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/DI0/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/COMLINE/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/BURR_BRM/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/BJT/
+       option list
+       option node
+       option brief =     1.00
+       option post =     3.00
+ init: end read circuit files, cpu clock= 3.50E-02 peak memory=      59 mb
+ init: begin check errors, cpu clock= 3.50E-02
+ init: end check errors, cpu clock= 3.90E-02 peak memory=      60 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 3.90E-02
+       establish matrix -- done, cpu clock= 3.90E-02 peak memory=      60 mb
+       re-order matrix -- done, cpu clock= 3.90E-02 peak memory=      60 mb
+ init: end setup matrix, cpu clock= 4.00E-02 peak memory=      60 mb
+ dcop: begin dcop, cpu clock= 4.00E-02
+ dcop: end dcop, cpu clock= 4.10E-02 peak memory=      60 mb tot_iter=       5
+ output: C:\sdsy\task2\case3\supper_buffer.mt0
+ sweep: tran tran0    begin, stop_t=  6.00E-08 #sweeps=**** cpu clock= 4.30E-02
+ tran: time= 6.3015E-09 tot_iter=     102 conv_iter=      43 cpu clock= 4.60E-02
+ tran: time= 1.3993E-08 tot_iter=     110 conv_iter=      47 cpu clock= 4.60E-02
+ tran: time= 1.9287E-08 tot_iter=     116 conv_iter=      49 cpu clock= 4.70E-02
+ tran: time= 2.5217E-08 tot_iter=     122 conv_iter=      51 cpu clock= 4.70E-02
+ tran: time= 3.0986E-08 tot_iter=     126 conv_iter=      53 cpu clock= 4.80E-02
+ tran: time= 3.6986E-08 tot_iter=     130 conv_iter=      55 cpu clock= 4.80E-02
+ tran: time= 4.2986E-08 tot_iter=     134 conv_iter=      57 cpu clock= 4.80E-02
+ tran: time= 4.8753E-08 tot_iter=     220 conv_iter=      92 cpu clock= 5.10E-02
+ tran: time= 5.4665E-08 tot_iter=     235 conv_iter=      98 cpu clock= 5.10E-02
+ tran: time= 6.0000E-08 tot_iter=     241 conv_iter=     101 cpu clock= 5.20E-02
+ sweep: tran tran0    end, cpu clock= 5.20E-02 peak memory=      61 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

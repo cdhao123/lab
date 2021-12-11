@@ -1,0 +1,14 @@
+pnlAddPane();
+nil
+1
+designOpen("C:/sdsy/case2/inverter.sw0");
+nil
+pnlUnselectPane(1, 0);
+nil
+pnlSelectPane(1);
+nil
+quit();
+exit
+pnlDeletePane(1, 1);
+nil
+nil

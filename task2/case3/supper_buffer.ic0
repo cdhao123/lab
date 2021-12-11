@@ -1,0 +1,19 @@
+* "simulator" "HSPICE" 
+* "version" "O-2018.09-SP2 win64"
+* "format" "HSP"
+* "rundate" "18:59:55 11/14/2021 "
+* "netlist" "supper_buffer.sp "
+* "runtitle" ""
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ vdd =   1.0000        
++ vin =   0.            
++ vout1 = 999.9151m       
++ vout2 =  61.7962u       
++ vout3 = 999.8465m       
++ vout4 =   9.9326u       
+***   END: Saved Operating Point ***                     
