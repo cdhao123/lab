@@ -1,0 +1,239 @@
+ ****** HSPICE -- O-2018.09-SP2 win64 (Feb 25 2019) ******                      
+  Copyright (c) 1986 - 2021 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: acmr.sp                                                           
+  Command line options: C:\synopsys\Hspice_O-2018.09-SP2\WIN64\hspice.com -i acmr.sp -o C:\mdsy\proj2\acmr.lis
+  Start time: Mon Dec  6 18:56:21 2021
+  lic:  
+  lic: FLEXlm: SDK_11.7.3 
+  lic: USER:   admin                HOSTNAME: DESKTOP-3KO7170 
+  lic: HOSTID: "d83bbfb49802"       PID:      15840 
+  lic: Using FLEXlm license file: 
+  lic: 27000@DESKTOP-3KO7170 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2029/2019.2019 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@DESKTOP-3KO7170 
+  lic:   
+  **warning** (acmr.sp:4) Global net name, "gnd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+ 
+
+  
+      
+
+Element variations(Local):   element              parameter
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+  Opening plot unit= 79
+ file=C:\mdsy\proj2\acmr.pa0
+
+ **info** dc convergence successful at Newton-Raphson method 
+1****** HSPICE -- O-2018.09-SP2 win64 (Feb 25 2019) ******                      
+ ******  
+ 
+
+ ****** operating point information tnom=  25.000 temp= 100.000 ******
+ ****** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:n11     = 859.8272m 0:n12     = 859.8272m 0:n21     = 877.8411m
+ +0:n22     = 877.8411m 0:vcm     = 872.0000m 0:vcm2    = 872.0000m
+ +0:vdd     =   1.7000  0:vin11   = 872.0000m 0:vin12   = 872.0000m
+ +0:vin21   = 872.0000m 0:vin22   = 872.0000m 1:n3      = 223.6467m
+ +1:n4      =   1.0325  1:n5      = 717.9998m 2:n3      = 223.6467m
+ +2:n4      =   1.0325  2:n5      = 717.9998m
+
+
+ **** voltage sources
+
+ subckt                                                                    
+ element  0:vdd      0:vic      0:vic2     0:vin1     0:vin11    0:vin2    
+  volts      1.7000   872.0000m  872.0000m    0.         0.         0.     
+  current   -5.2545m    0.         0.         0.         0.         0.     
+  power      8.9326m    0.         0.         0.         0.         0.     
+
+ subckt             
+ element  0:vin22   
+  volts      0.     
+  current    0.     
+  power      0.     
+
+     total voltage source power dissipation=    8.9326m       watts
+
+
+
+ **** current sources
+
+ subckt   xamp1      xamp2     
+ element  1:i1       2:i1      
+  volts    982.0002m  982.0002m
+  current   10.0000u   10.0000u
+  power     -9.8200u   -9.8200u
+
+
+     total current source power dissipation= -19.6400u       watts
+
+
+ **** mosfets
+
+
+ subckt   xamp1      xamp1      xamp1      xamp1      xamp1      xamp1     
+ element  1:m0       1:m1       1:m2       1:m3       1:m4       1:m5      
+ model    0:nch.3    0:nch.4    0:nch.4    0:pch.8    0:pch.8    0:pch.3   
+ region   Linear     Saturation Saturation Saturation Saturation Saturation
+  id         2.3763m    1.1985m    1.1778m -214.8448u -195.5028u -983.6422u
+  ibs       -7.2479f  -12.3836p  -12.1389p  593.4865a  540.0815a    2.6125f
+  ibd      -22.3368p  -12.4129p  -12.1909p  567.2476f  567.2475f   19.5450p
+  vgs      717.9998m  648.3533m  648.3533m -840.1728m -822.1589m -667.4746m
+  vds      223.6467m  636.1804m  654.1944m -840.1728m -822.1589m -840.1728m
+  vbs        0.      -223.6467m -223.6467m    0.         0.         0.     
+  vth      454.6960m  541.0032m  540.9804m -503.6348m -503.7106m -444.9495m
+  vdsat    302.3057m  144.5254m  144.5397m -288.2088m -276.7133m -218.8161m
+  vod      263.3037m  107.3500m  107.3728m -336.5381m -318.4483m -222.5251m
+  beta      67.5461m  130.7328m  128.1443m    3.5301m    3.5403m   37.3631m
+  gam eff  493.5707m  555.9713m  555.9713m  640.6161m  640.6162m  507.7610m
+  gm        12.4590m   13.6830m   13.4421m    1.0528m    1.0136m    7.3778m
+  gds        4.5812m  176.7617u  170.3916u   42.1920u   39.1374u   72.8211u
+  gmb        3.9449m    3.7675m    3.7005m  383.2798u  368.5377u    2.5810m
+  cdtot    691.8290f  190.2720f  185.9432f   11.4672f   11.5056f  405.7640f
+  cgtot      2.3424p  436.8100f  428.1599f   15.6271f   15.5986f    1.1930p
+  cstot      2.7581p  550.3385f  539.4563f   25.0446f   25.0143f    1.5927p
+  cbtot      1.3442p  393.9071f  385.5589f   23.4275f   23.4724f    1.0315p
+  cgs        1.9442p  346.2691f  339.4071f   12.2910f   12.2500f    1.0443p
+  cgd      264.0289f   59.5370f   58.3529f    2.8344f    2.8344f  102.6531f
+
+
+
+ subckt   xamp1      xamp1      xamp1      xamp1      xamp2      xamp2     
+ element  1:m8       1:m7       1:m9       1:m10      2:m0       2:m1      
+ model    0:pch.3    0:pch.3    0:nch.3    0:nch.6    0:nch.3    0:nch.4   
+ region   Saturation Saturation Saturation Saturation Linear     Saturation
+  id      -982.3226u -240.9154u  240.9154u   10.0000u    2.3763m    1.1985m
+  ibs        2.6090f  640.7278a -745.5443a  -37.3427a   -7.2479f  -12.3836p
+  ibd       19.5450p    9.1038p  -14.7637p -149.2348f  -22.3368p  -12.4129p
+  vgs     -667.4746m -667.4746m  717.9998m  717.9998m  717.9998m  648.3533m
+  vds     -822.1589m -667.4746m    1.0325   717.9998m  223.6467m  636.1804m
+  vbs        0.         0.         0.         0.         0.      -223.6467m
+  vth     -444.9548m -432.1731m  455.9502m  442.9717m  454.6960m  541.0032m
+  vdsat   -218.8122m -230.5741m  294.8615m  311.4429m  302.3057m  144.5254m
+  vod     -222.5198m -235.3015m  262.0496m  275.0280m  263.3037m  107.3500m
+  beta      37.3631m    8.6372m    6.0098m  229.9431u   67.5461m  130.7328m
+  gam eff  507.7610m  485.0494m  491.1726m  508.1445m  493.5707m  555.9713m
+  gm         7.3690m    1.7420m    1.5318m   62.2225u   12.4590m   13.6830m
+  gds       73.7047u   10.5907u    6.7567u  282.0733n    4.5812m  176.7617u
+  gmb        2.5779m  607.4986u  475.8625u   19.5368u    3.9449m    3.7675m
+  cdtot    407.1558f  196.1958f   26.0360f    2.0914f  691.8290f  190.2720f
+  cgtot      1.1931p    1.0132p  151.7539f   16.8860f    2.3424p  436.8100f
+  cstot      1.5927p    1.2642p  190.4293f   20.9805f    2.7581p  550.3385f
+  cbtot      1.0328p  642.0077f   90.6934f    9.2764f    1.3442p  393.9071f
+  cgs        1.0443p  920.0845f  132.2509f   14.7952f    1.9442p  346.2691f
+  cgd      102.6660f   48.0651f    8.3548f  596.8439a  264.0289f   59.5370f
+
+
+
+ subckt   xamp2      xamp2      xamp2      xamp2      xamp2      xamp2     
+ element  2:m2       2:m3       2:m4       2:m5       2:m8       2:m7      
+ model    0:nch.4    0:pch.8    0:pch.8    0:pch.3    0:pch.3    0:pch.3   
+ region   Saturation Saturation Saturation Saturation Saturation Saturation
+  id         1.1778m -214.8448u -195.5028u -983.6422u -982.3226u -240.9154u
+  ibs      -12.1389p  593.4865a  540.0815a    2.6125f    2.6090f  640.7278a
+  ibd      -12.1909p  567.2476f  567.2475f   19.5450p   19.5450p    9.1038p
+  vgs      648.3533m -840.1728m -822.1589m -667.4746m -667.4746m -667.4746m
+  vds      654.1944m -840.1728m -822.1589m -840.1728m -822.1589m -667.4746m
+  vbs     -223.6467m    0.         0.         0.         0.         0.     
+  vth      540.9804m -503.6348m -503.7106m -444.9495m -444.9548m -432.1731m
+  vdsat    144.5397m -288.2088m -276.7133m -218.8161m -218.8122m -230.5741m
+  vod      107.3728m -336.5381m -318.4483m -222.5251m -222.5198m -235.3015m
+  beta     128.1443m    3.5301m    3.5403m   37.3631m   37.3631m    8.6372m
+  gam eff  555.9713m  640.6161m  640.6162m  507.7610m  507.7610m  485.0494m
+  gm        13.4421m    1.0528m    1.0136m    7.3778m    7.3690m    1.7420m
+  gds      170.3916u   42.1920u   39.1374u   72.8211u   73.7047u   10.5907u
+  gmb        3.7005m  383.2798u  368.5377u    2.5810m    2.5779m  607.4986u
+  cdtot    185.9432f   11.4672f   11.5056f  405.7640f  407.1558f  196.1958f
+  cgtot    428.1599f   15.6271f   15.5986f    1.1930p    1.1931p    1.0132p
+  cstot    539.4563f   25.0446f   25.0143f    1.5927p    1.5927p    1.2642p
+  cbtot    385.5589f   23.4275f   23.4724f    1.0315p    1.0328p  642.0077f
+  cgs      339.4071f   12.2910f   12.2500f    1.0443p    1.0443p  920.0845f
+  cgd       58.3529f    2.8344f    2.8344f  102.6531f  102.6660f   48.0651f
+
+
+
+ subckt   xamp2      xamp2     
+ element  2:m9       2:m10     
+ model    0:nch.3    0:nch.6   
+ region   Saturation Saturation
+  id       240.9154u   10.0000u
+  ibs     -745.5443a  -37.3427a
+  ibd      -14.7637p -149.2348f
+  vgs      717.9998m  717.9998m
+  vds        1.0325   717.9998m
+  vbs        0.         0.     
+  vth      455.9502m  442.9717m
+  vdsat    294.8615m  311.4429m
+  vod      262.0496m  275.0280m
+  beta       6.0098m  229.9431u
+  gam eff  491.1726m  508.1445m
+  gm         1.5318m   62.2225u
+  gds        6.7567u  282.0733n
+  gmb      475.8625u   19.5368u
+  cdtot     26.0360f    2.0914f
+  cgtot    151.7539f   16.8860f
+  cstot    190.4293f   20.9805f
+  cbtot     90.6934f    9.2764f
+  cgs      132.2509f   14.7952f
+  cgd        8.3548f  596.8439a
+
+
+
+
+          ***** job concluded
+ ******  
+ 
+
+ ****** job statistics summary tnom=  25.000 temp= 100.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     8
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      58 # elements   =      33
+  # resistors   =       0 # capacitors =       4 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       7
+  # curr_srcs   =       2 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      20 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1          13
+  ac analysis        0.01         451         451
+  readin             0.03
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         64.45 megabytes
+           total cpu time            0.05 seconds
+           total elapsed time        0.08 seconds
+           job started at     18:56:21 12/06/2021
+           job ended   at     18:56:21 12/06/2021
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.02(s)

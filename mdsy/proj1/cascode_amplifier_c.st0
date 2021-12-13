@@ -1,0 +1,339 @@
+****** HSPICE -- O-2018.09-SP2 win64 (Feb 25 2019) ******
+Input File: cascode_amplifier_c.sp
+lic:
+lic: FLEXlm: SDK_11.7.3
+lic: USER:   admin                HOSTNAME: DESKTOP-3KO7170
+lic: HOSTID: "d83bbfb49802"       PID:      8448
+lic: Using FLEXlm license file:
+lic: 27000@DESKTOP-3KO7170
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 30-dec-2029/2019.2019
+lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@DESKTOP-3KO7170
+lic:
+
+ init: begin read circuit files, cpu clock= 4.50E-02
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/behave/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/AD/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/XILINX/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/TLINE/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/TI/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/SIGNET/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/PCI/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/LIN_TECH/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/PET/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/DI0/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/COMLINE/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/BURR_BRM/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/BJT/
+       option list
+       option node
+       option brief =     1.00
+       option post =     3.00
+ init: end read circuit files, cpu clock= 5.20E-02 peak memory=      61 mb
+ init: begin check errors, cpu clock= 5.20E-02
+ init: end check errors, cpu clock= 5.80E-02 peak memory=      61 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 5.80E-02
+       establish matrix -- done, cpu clock= 5.80E-02 peak memory=      61 mb
+       re-order matrix -- done, cpu clock= 5.80E-02 peak memory=      61 mb
+ init: end setup matrix, cpu clock= 5.80E-02 peak memory=      61 mb
+ dcop: begin dcop, cpu clock= 5.90E-02
+ dcop: end dcop, cpu clock= 6.60E-02 peak memory=      61 mb tot_iter=     187
+ sweep: parameter       parameter1       begin, #sweeps =  37
+ parameter: vbias           =    0.00E+00
+ dcop: begin dcop, cpu clock= 6.70E-02
+ dcop: end dcop, cpu clock= 6.70E-02 peak memory=      61 mb tot_iter=     194
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac1    begin, #sweeps=   2 cpu clock= 6.80E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac1    end, cpu clock= 6.80E-02 peak memory=      61 mb
+ parameter: vbias           =    5.00E-02
+ dcop: begin dcop, cpu clock= 6.80E-02
+ dcop: end dcop, cpu clock= 6.90E-02 peak memory=      61 mb tot_iter=     199
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac2    begin, #sweeps=   2 cpu clock= 6.90E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac2    end, cpu clock= 6.90E-02 peak memory=      61 mb
+ parameter: vbias           =    1.00E-01
+ dcop: begin dcop, cpu clock= 6.90E-02
+ dcop: end dcop, cpu clock= 7.00E-02 peak memory=      61 mb tot_iter=     204
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac3    begin, #sweeps=   2 cpu clock= 7.00E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac3    end, cpu clock= 7.00E-02 peak memory=      61 mb
+ parameter: vbias           =    1.50E-01
+ dcop: begin dcop, cpu clock= 7.10E-02
+ dcop: end dcop, cpu clock= 7.10E-02 peak memory=      61 mb tot_iter=     209
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac4    begin, #sweeps=   2 cpu clock= 7.10E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac4    end, cpu clock= 7.20E-02 peak memory=      61 mb
+ parameter: vbias           =    2.00E-01
+ dcop: begin dcop, cpu clock= 7.20E-02
+ dcop: end dcop, cpu clock= 7.30E-02 peak memory=      61 mb tot_iter=     214
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac5    begin, #sweeps=   2 cpu clock= 7.30E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac5    end, cpu clock= 7.30E-02 peak memory=      61 mb
+ parameter: vbias           =    2.50E-01
+ dcop: begin dcop, cpu clock= 7.40E-02
+ dcop: end dcop, cpu clock= 7.40E-02 peak memory=      61 mb tot_iter=     219
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac6    begin, #sweeps=   2 cpu clock= 7.50E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac6    end, cpu clock= 7.50E-02 peak memory=      61 mb
+ parameter: vbias           =    3.00E-01
+ dcop: begin dcop, cpu clock= 7.50E-02
+ dcop: end dcop, cpu clock= 7.60E-02 peak memory=      61 mb tot_iter=     224
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac7    begin, #sweeps=   2 cpu clock= 7.60E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac7    end, cpu clock= 7.60E-02 peak memory=      61 mb
+ parameter: vbias           =    3.50E-01
+ dcop: begin dcop, cpu clock= 7.60E-02
+ dcop: end dcop, cpu clock= 7.70E-02 peak memory=      61 mb tot_iter=     228
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac8    begin, #sweeps=   2 cpu clock= 7.70E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac8    end, cpu clock= 7.70E-02 peak memory=      61 mb
+ parameter: vbias           =    4.00E-01
+ dcop: begin dcop, cpu clock= 7.70E-02
+ dcop: end dcop, cpu clock= 7.80E-02 peak memory=      61 mb tot_iter=     232
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac9    begin, #sweeps=   2 cpu clock= 7.80E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac9    end, cpu clock= 7.80E-02 peak memory=      61 mb
+ parameter: vbias           =    4.50E-01
+ dcop: begin dcop, cpu clock= 7.80E-02
+ dcop: end dcop, cpu clock= 7.90E-02 peak memory=      61 mb tot_iter=     236
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac10   begin, #sweeps=   2 cpu clock= 7.90E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac10   end, cpu clock= 7.90E-02 peak memory=      61 mb
+ parameter: vbias           =    5.00E-01
+ dcop: begin dcop, cpu clock= 7.90E-02
+ dcop: end dcop, cpu clock= 7.90E-02 peak memory=      61 mb tot_iter=     240
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac11   begin, #sweeps=   2 cpu clock= 7.90E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac11   end, cpu clock= 8.00E-02 peak memory=      61 mb
+ parameter: vbias           =    5.50E-01
+ dcop: begin dcop, cpu clock= 8.00E-02
+ dcop: end dcop, cpu clock= 8.00E-02 peak memory=      61 mb tot_iter=     244
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac12   begin, #sweeps=   2 cpu clock= 8.00E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac12   end, cpu clock= 8.00E-02 peak memory=      61 mb
+ parameter: vbias           =    6.00E-01
+ dcop: begin dcop, cpu clock= 8.10E-02
+ dcop: end dcop, cpu clock= 8.20E-02 peak memory=      61 mb tot_iter=     248
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac13   begin, #sweeps=   2 cpu clock= 8.20E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac13   end, cpu clock= 8.20E-02 peak memory=      61 mb
+ parameter: vbias           =    6.50E-01
+ dcop: begin dcop, cpu clock= 8.20E-02
+ dcop: end dcop, cpu clock= 8.30E-02 peak memory=      61 mb tot_iter=     252
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac14   begin, #sweeps=   2 cpu clock= 8.30E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac14   end, cpu clock= 8.30E-02 peak memory=      61 mb
+ parameter: vbias           =    7.00E-01
+ dcop: begin dcop, cpu clock= 8.40E-02
+ dcop: end dcop, cpu clock= 8.50E-02 peak memory=      61 mb tot_iter=     256
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac15   begin, #sweeps=   2 cpu clock= 8.50E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac15   end, cpu clock= 8.50E-02 peak memory=      61 mb
+ parameter: vbias           =    7.50E-01
+ dcop: begin dcop, cpu clock= 8.50E-02
+ dcop: end dcop, cpu clock= 8.60E-02 peak memory=      61 mb tot_iter=     260
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac16   begin, #sweeps=   2 cpu clock= 8.60E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac16   end, cpu clock= 8.60E-02 peak memory=      61 mb
+ parameter: vbias           =    8.00E-01
+ dcop: begin dcop, cpu clock= 8.60E-02
+ dcop: end dcop, cpu clock= 8.70E-02 peak memory=      61 mb tot_iter=     264
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac17   begin, #sweeps=   2 cpu clock= 8.70E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac17   end, cpu clock= 8.70E-02 peak memory=      61 mb
+ parameter: vbias           =    8.50E-01
+ dcop: begin dcop, cpu clock= 8.70E-02
+ dcop: end dcop, cpu clock= 8.80E-02 peak memory=      61 mb tot_iter=     268
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac18   begin, #sweeps=   2 cpu clock= 8.80E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac18   end, cpu clock= 8.80E-02 peak memory=      61 mb
+ parameter: vbias           =    9.00E-01
+ dcop: begin dcop, cpu clock= 8.80E-02
+ dcop: end dcop, cpu clock= 8.90E-02 peak memory=      61 mb tot_iter=     272
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac19   begin, #sweeps=   2 cpu clock= 8.90E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac19   end, cpu clock= 8.90E-02 peak memory=      61 mb
+ parameter: vbias           =    9.50E-01
+ dcop: begin dcop, cpu clock= 9.00E-02
+ dcop: end dcop, cpu clock= 9.00E-02 peak memory=      61 mb tot_iter=     276
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac20   begin, #sweeps=   2 cpu clock= 9.10E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac20   end, cpu clock= 9.10E-02 peak memory=      61 mb
+ parameter: vbias           =    1.00E+00
+ dcop: begin dcop, cpu clock= 9.10E-02
+ dcop: end dcop, cpu clock= 9.20E-02 peak memory=      61 mb tot_iter=     280
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac21   begin, #sweeps=   2 cpu clock= 9.20E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac21   end, cpu clock= 9.30E-02 peak memory=      61 mb
+ parameter: vbias           =    1.05E+00
+ dcop: begin dcop, cpu clock= 9.30E-02
+ dcop: end dcop, cpu clock= 9.40E-02 peak memory=      61 mb tot_iter=     284
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac22   begin, #sweeps=   2 cpu clock= 9.40E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac22   end, cpu clock= 9.40E-02 peak memory=      61 mb
+ parameter: vbias           =    1.10E+00
+ dcop: begin dcop, cpu clock= 9.40E-02
+ dcop: end dcop, cpu clock= 9.50E-02 peak memory=      61 mb tot_iter=     288
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac23   begin, #sweeps=   2 cpu clock= 9.50E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac23   end, cpu clock= 9.50E-02 peak memory=      61 mb
+ parameter: vbias           =    1.15E+00
+ dcop: begin dcop, cpu clock= 9.60E-02
+ dcop: end dcop, cpu clock= 9.60E-02 peak memory=      61 mb tot_iter=     292
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac24   begin, #sweeps=   2 cpu clock= 9.60E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac24   end, cpu clock= 9.70E-02 peak memory=      61 mb
+ parameter: vbias           =    1.20E+00
+ dcop: begin dcop, cpu clock= 9.70E-02
+ dcop: end dcop, cpu clock= 9.80E-02 peak memory=      61 mb tot_iter=     296
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac25   begin, #sweeps=   2 cpu clock= 9.80E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac25   end, cpu clock= 9.80E-02 peak memory=      61 mb
+ parameter: vbias           =    1.25E+00
+ dcop: begin dcop, cpu clock= 9.80E-02
+ dcop: end dcop, cpu clock= 9.90E-02 peak memory=      61 mb tot_iter=     300
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac26   begin, #sweeps=   2 cpu clock= 9.90E-02
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac26   end, cpu clock= 9.90E-02 peak memory=      61 mb
+ parameter: vbias           =    1.30E+00
+ dcop: begin dcop, cpu clock= 9.90E-02
+ dcop: end dcop, cpu clock= 1.00E-01 peak memory=      61 mb tot_iter=     304
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac27   begin, #sweeps=   2 cpu clock= 1.00E-01
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac27   end, cpu clock= 1.00E-01 peak memory=      61 mb
+ parameter: vbias           =    1.35E+00
+ dcop: begin dcop, cpu clock= 1.01E-01
+ dcop: end dcop, cpu clock= 1.01E-01 peak memory=      61 mb tot_iter=     308
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac28   begin, #sweeps=   2 cpu clock= 1.01E-01
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac28   end, cpu clock= 1.02E-01 peak memory=      61 mb
+ parameter: vbias           =    1.40E+00
+ dcop: begin dcop, cpu clock= 1.02E-01
+ dcop: end dcop, cpu clock= 1.03E-01 peak memory=      61 mb tot_iter=     312
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac29   begin, #sweeps=   2 cpu clock= 1.03E-01
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac29   end, cpu clock= 1.03E-01 peak memory=      61 mb
+ parameter: vbias           =    1.45E+00
+ dcop: begin dcop, cpu clock= 1.03E-01
+ dcop: end dcop, cpu clock= 1.04E-01 peak memory=      61 mb tot_iter=     316
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac30   begin, #sweeps=   2 cpu clock= 1.04E-01
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac30   end, cpu clock= 1.04E-01 peak memory=      61 mb
+ parameter: vbias           =    1.50E+00
+ dcop: begin dcop, cpu clock= 1.05E-01
+ dcop: end dcop, cpu clock= 1.05E-01 peak memory=      61 mb tot_iter=     320
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac31   begin, #sweeps=   2 cpu clock= 1.05E-01
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac31   end, cpu clock= 1.06E-01 peak memory=      61 mb
+ parameter: vbias           =    1.55E+00
+ dcop: begin dcop, cpu clock= 1.06E-01
+ dcop: end dcop, cpu clock= 1.07E-01 peak memory=      61 mb tot_iter=     324
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac32   begin, #sweeps=   2 cpu clock= 1.07E-01
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac32   end, cpu clock= 1.07E-01 peak memory=      61 mb
+ parameter: vbias           =    1.60E+00
+ dcop: begin dcop, cpu clock= 1.07E-01
+ dcop: end dcop, cpu clock= 1.08E-01 peak memory=      61 mb tot_iter=     329
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac33   begin, #sweeps=   2 cpu clock= 1.08E-01
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac33   end, cpu clock= 1.08E-01 peak memory=      61 mb
+ parameter: vbias           =    1.65E+00
+ dcop: begin dcop, cpu clock= 1.08E-01
+ dcop: end dcop, cpu clock= 1.08E-01 peak memory=      61 mb tot_iter=     334
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac34   begin, #sweeps=   2 cpu clock= 1.08E-01
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac34   end, cpu clock= 1.09E-01 peak memory=      61 mb
+ parameter: vbias           =    1.70E+00
+ dcop: begin dcop, cpu clock= 1.09E-01
+ dcop: end dcop, cpu clock= 1.09E-01 peak memory=      61 mb tot_iter=     339
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac35   begin, #sweeps=   2 cpu clock= 1.09E-01
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac35   end, cpu clock= 1.09E-01 peak memory=      61 mb
+ parameter: vbias           =    1.75E+00
+ dcop: begin dcop, cpu clock= 1.10E-01
+ dcop: end dcop, cpu clock= 1.10E-01 peak memory=      61 mb tot_iter=     344
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac36   begin, #sweeps=   2 cpu clock= 1.10E-01
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac36   end, cpu clock= 1.10E-01 peak memory=      61 mb
+ parameter: vbias           =    1.80E+00
+ dcop: begin dcop, cpu clock= 1.11E-01
+ dcop: end dcop, cpu clock= 1.11E-01 peak memory=      61 mb tot_iter=     349
+ output: C:\mdsy\proj1\cascode_amplifier_c.ac0
+ sweep: ac ac37   begin, #sweeps=   2 cpu clock= 1.11E-01
+ ac: frequency=9.00e+00
+ ac: frequency=1.00e+01
+ sweep: ac ac37   end, cpu clock= 1.11E-01 peak memory=      61 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

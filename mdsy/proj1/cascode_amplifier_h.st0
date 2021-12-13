@@ -1,0 +1,350 @@
+****** HSPICE -- O-2018.09-SP2 win64 (Feb 25 2019) ******
+Input File: cascode_amplifier_h.sp
+lic:
+lic: FLEXlm: SDK_11.7.3
+lic: USER:   admin                HOSTNAME: DESKTOP-3KO7170
+lic: HOSTID: "d83bbfb49802"       PID:      12728
+lic: Using FLEXlm license file:
+lic: 27000@DESKTOP-3KO7170
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 30-dec-2029/2019.2019
+lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@DESKTOP-3KO7170
+lic:
+
+ init: begin read circuit files, cpu clock= 1.12E-01
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/behave/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/AD/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/XILINX/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/TLINE/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/TI/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/SIGNET/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/PCI/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/LIN_TECH/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/PET/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/DI0/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/COMLINE/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/BURR_BRM/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/BJT/
+       option list
+       option node
+       option brief =     1.00
+       option post =     3.00
+ init: end read circuit files, cpu clock= 1.25E-01 peak memory=      61 mb
+ init: begin check errors, cpu clock= 1.25E-01
+ init: end check errors, cpu clock= 1.40E-01 peak memory=      61 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 1.40E-01
+       establish matrix -- done, cpu clock= 1.40E-01 peak memory=      61 mb
+       re-order matrix -- done, cpu clock= 1.40E-01 peak memory=      61 mb
+ init: end setup matrix, cpu clock= 1.41E-01 peak memory=      61 mb
+ dcop: begin dcop, cpu clock= 1.41E-01
+ dcop: end dcop, cpu clock= 1.70E-01 peak memory=      61 mb tot_iter=     249
+ output: C:\mdsy\proj1\cascode_amplifier_h.ac0
+ sweep: ac ac0    begin, #sweeps=  91 cpu clock= 1.76E-01
+ ac: frequency=1.00e+00
+ ac: frequency=7.94e+00
+ ac: frequency=6.31e+01
+ ac: frequency=5.01e+02
+ ac: frequency=3.98e+03
+ ac: frequency=3.16e+04
+ ac: frequency=2.51e+05
+ ac: frequency=2.00e+06
+ ac: frequency=1.58e+07
+ ac: frequency=1.26e+08
+ ac: frequency=1.00e+09
+ sweep: ac ac0    end, cpu clock= 1.86E-01 peak memory=      61 mb
+>info:         ***** hspice job concluded
+ init: begin read circuit files, cpu clock= 2.54E-01
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/behave/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/AD/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/XILINX/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/TLINE/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/TI/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/SIGNET/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/PCI/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/LIN_TECH/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/PET/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/DI0/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/COMLINE/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/BURR_BRM/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/BJT/
+       option list
+       option node
+       option brief =     1.00
+       option post =     3.00
+ init: end read circuit files, cpu clock= 2.65E-01 peak memory=      61 mb
+ init: begin check errors, cpu clock= 2.65E-01
+ init: end check errors, cpu clock= 2.73E-01 peak memory=      62 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 2.73E-01
+       establish matrix -- done, cpu clock= 2.74E-01 peak memory=      62 mb
+       re-order matrix -- done, cpu clock= 2.74E-01 peak memory=      62 mb
+ init: end setup matrix, cpu clock= 2.74E-01 peak memory=      62 mb
+ dcop: begin dcop, cpu clock= 2.74E-01
+ dcop: end dcop, cpu clock= 2.91E-01 peak memory=      62 mb tot_iter=     250
+ output: C:\mdsy\proj1\cascode_amplifier_h.ac1
+ sweep: ac ac0    begin, #sweeps=  91 cpu clock= 2.92E-01
+ ac: frequency=1.00e+00
+ ac: frequency=7.94e+00
+ ac: frequency=6.31e+01
+ ac: frequency=5.01e+02
+ ac: frequency=3.98e+03
+ ac: frequency=3.16e+04
+ ac: frequency=2.51e+05
+ ac: frequency=2.00e+06
+ ac: frequency=1.58e+07
+ ac: frequency=1.26e+08
+ ac: frequency=1.00e+09
+ sweep: ac ac0    end, cpu clock= 2.95E-01 peak memory=      62 mb
+>info:         ***** hspice job concluded
+ init: begin read circuit files, cpu clock= 3.49E-01
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/behave/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/AD/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/XILINX/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/TLINE/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/TI/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/SIGNET/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/PCI/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/LIN_TECH/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/PET/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/DI0/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/COMLINE/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/BURR_BRM/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/BJT/
+       option list
+       option node
+       option brief =     1.00
+       option post =     3.00
+ init: end read circuit files, cpu clock= 3.63E-01 peak memory=      62 mb
+ init: begin check errors, cpu clock= 3.63E-01
+ init: end check errors, cpu clock= 3.72E-01 peak memory=      63 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 3.72E-01
+       establish matrix -- done, cpu clock= 3.72E-01 peak memory=      63 mb
+       re-order matrix -- done, cpu clock= 3.73E-01 peak memory=      63 mb
+ init: end setup matrix, cpu clock= 3.73E-01 peak memory=      63 mb
+ dcop: begin dcop, cpu clock= 3.74E-01
+ dcop: end dcop, cpu clock= 3.97E-01 peak memory=      63 mb tot_iter=     253
+ output: C:\mdsy\proj1\cascode_amplifier_h.ac2
+ sweep: ac ac0    begin, #sweeps=  91 cpu clock= 3.98E-01
+ ac: frequency=1.00e+00
+ ac: frequency=7.94e+00
+ ac: frequency=6.31e+01
+ ac: frequency=5.01e+02
+ ac: frequency=3.98e+03
+ ac: frequency=3.16e+04
+ ac: frequency=2.51e+05
+ ac: frequency=2.00e+06
+ ac: frequency=1.58e+07
+ ac: frequency=1.26e+08
+ ac: frequency=1.00e+09
+ sweep: ac ac0    end, cpu clock= 4.01E-01 peak memory=      63 mb
+>info:         ***** hspice job concluded
+ init: begin read circuit files, cpu clock= 4.43E-01
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/behave/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/AD/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/XILINX/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/TLINE/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/TI/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/SIGNET/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/PCI/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/LIN_TECH/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/PET/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/DI0/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/COMLINE/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/BURR_BRM/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/BJT/
+       option list
+       option node
+       option brief =     1.00
+       option post =     3.00
+ init: end read circuit files, cpu clock= 4.53E-01 peak memory=      62 mb
+ init: begin check errors, cpu clock= 4.53E-01
+ init: end check errors, cpu clock= 4.61E-01 peak memory=      64 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 4.61E-01
+       establish matrix -- done, cpu clock= 4.61E-01 peak memory=      64 mb
+       re-order matrix -- done, cpu clock= 4.62E-01 peak memory=      64 mb
+ init: end setup matrix, cpu clock= 4.62E-01 peak memory=      64 mb
+ dcop: begin dcop, cpu clock= 4.62E-01
+ dcop: end dcop, cpu clock= 4.68E-01 peak memory=      64 mb tot_iter=      56
+ output: C:\mdsy\proj1\cascode_amplifier_h.ac3
+ sweep: ac ac0    begin, #sweeps=  91 cpu clock= 4.69E-01
+ ac: frequency=1.00e+00
+ ac: frequency=7.94e+00
+ ac: frequency=6.31e+01
+ ac: frequency=5.01e+02
+ ac: frequency=3.98e+03
+ ac: frequency=3.16e+04
+ ac: frequency=2.51e+05
+ ac: frequency=2.00e+06
+ ac: frequency=1.58e+07
+ ac: frequency=1.26e+08
+ ac: frequency=1.00e+09
+ sweep: ac ac0    end, cpu clock= 4.71E-01 peak memory=      64 mb
+>info:         ***** hspice job concluded
+ init: begin read circuit files, cpu clock= 5.16E-01
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/behave/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/AD/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/XILINX/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/TLINE/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/TI/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/SIGNET/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/PCI/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/LIN_TECH/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/PET/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/DI0/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/COMLINE/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/BURR_BRM/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/BJT/
+       option list
+       option node
+       option brief =     1.00
+       option post =     3.00
+ init: end read circuit files, cpu clock= 5.29E-01 peak memory=      61 mb
+ init: begin check errors, cpu clock= 5.29E-01
+ init: end check errors, cpu clock= 5.37E-01 peak memory=      63 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 5.37E-01
+       establish matrix -- done, cpu clock= 5.37E-01 peak memory=      63 mb
+       re-order matrix -- done, cpu clock= 5.37E-01 peak memory=      63 mb
+ init: end setup matrix, cpu clock= 5.37E-01 peak memory=      63 mb
+ dcop: begin dcop, cpu clock= 5.37E-01
+ dcop: end dcop, cpu clock= 5.57E-01 peak memory=      63 mb tot_iter=     252
+ output: C:\mdsy\proj1\cascode_amplifier_h.ac4
+ sweep: ac ac0    begin, #sweeps=  91 cpu clock= 5.58E-01
+ ac: frequency=1.00e+00
+ ac: frequency=7.94e+00
+ ac: frequency=6.31e+01
+ ac: frequency=5.01e+02
+ ac: frequency=3.98e+03
+ ac: frequency=3.16e+04
+ ac: frequency=2.51e+05
+ ac: frequency=2.00e+06
+ ac: frequency=1.58e+07
+ ac: frequency=1.26e+08
+ ac: frequency=1.00e+09
+ sweep: ac ac0    end, cpu clock= 5.60E-01 peak memory=      63 mb
+>info:         ***** hspice job concluded
+ init: begin read circuit files, cpu clock= 6.09E-01
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/behave/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/AD/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/XILINX/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/TLINE/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/TI/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/SIGNET/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/PCI/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/LIN_TECH/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/PET/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/DI0/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/COMLINE/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/BURR_BRM/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/BJT/
+       option list
+       option node
+       option brief =     1.00
+       option post =     3.00
+ init: end read circuit files, cpu clock= 6.21E-01 peak memory=      62 mb
+ init: begin check errors, cpu clock= 6.21E-01
+ init: end check errors, cpu clock= 6.29E-01 peak memory=      63 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 6.29E-01
+       establish matrix -- done, cpu clock= 6.29E-01 peak memory=      63 mb
+       re-order matrix -- done, cpu clock= 6.30E-01 peak memory=      63 mb
+ init: end setup matrix, cpu clock= 6.30E-01 peak memory=      63 mb
+ dcop: begin dcop, cpu clock= 6.30E-01
+ dcop: end dcop, cpu clock= 6.48E-01 peak memory=      64 mb tot_iter=     254
+ output: C:\mdsy\proj1\cascode_amplifier_h.ac5
+ sweep: ac ac0    begin, #sweeps=  91 cpu clock= 6.49E-01
+ ac: frequency=1.00e+00
+ ac: frequency=7.94e+00
+ ac: frequency=6.31e+01
+ ac: frequency=5.01e+02
+ ac: frequency=3.98e+03
+ ac: frequency=3.16e+04
+ ac: frequency=2.51e+05
+ ac: frequency=2.00e+06
+ ac: frequency=1.58e+07
+ ac: frequency=1.26e+08
+ ac: frequency=1.00e+09
+ sweep: ac ac0    end, cpu clock= 6.51E-01 peak memory=      64 mb
+>info:         ***** hspice job concluded
+ init: begin read circuit files, cpu clock= 6.90E-01
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/behave/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/AD/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/XILINX/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/TLINE/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/TI/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/SIGNET/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/PCI/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/LIN_TECH/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/PET/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/DI0/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/COMLINE/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/BURR_BRM/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/BJT/
+       option list
+       option node
+       option brief =     1.00
+       option post =     3.00
+ init: end read circuit files, cpu clock= 6.98E-01 peak memory=      63 mb
+ init: begin check errors, cpu clock= 6.98E-01
+ init: end check errors, cpu clock= 7.05E-01 peak memory=      64 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 7.05E-01
+       establish matrix -- done, cpu clock= 7.05E-01 peak memory=      64 mb
+       re-order matrix -- done, cpu clock= 7.06E-01 peak memory=      64 mb
+ init: end setup matrix, cpu clock= 7.06E-01 peak memory=      64 mb
+ dcop: begin dcop, cpu clock= 7.06E-01
+ dcop: end dcop, cpu clock= 7.21E-01 peak memory=      64 mb tot_iter=     255
+ output: C:\mdsy\proj1\cascode_amplifier_h.ac6
+ sweep: ac ac0    begin, #sweeps=  91 cpu clock= 7.22E-01
+ ac: frequency=1.00e+00
+ ac: frequency=7.94e+00
+ ac: frequency=6.31e+01
+ ac: frequency=5.01e+02
+ ac: frequency=3.98e+03
+ ac: frequency=3.16e+04
+ ac: frequency=2.51e+05
+ ac: frequency=2.00e+06
+ ac: frequency=1.58e+07
+ ac: frequency=1.26e+08
+ ac: frequency=1.00e+09
+ sweep: ac ac0    end, cpu clock= 7.25E-01 peak memory=      64 mb
+>info:         ***** hspice job concluded
+ init: begin read circuit files, cpu clock= 7.62E-01
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/behave/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/AD/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/XILINX/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/TLINE/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/TI/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/SIGNET/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/PCI/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/LIN_TECH/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/PET/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/DI0/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/COMLINE/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/BURR_BRM/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/BJT/
+       option list
+       option node
+       option brief =     1.00
+       option post =     3.00
+ init: end read circuit files, cpu clock= 7.76E-01 peak memory=      63 mb
+ init: begin check errors, cpu clock= 7.76E-01
+ init: end check errors, cpu clock= 7.84E-01 peak memory=      64 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 7.84E-01
+       establish matrix -- done, cpu clock= 7.84E-01 peak memory=      64 mb
+       re-order matrix -- done, cpu clock= 7.84E-01 peak memory=      64 mb
+ init: end setup matrix, cpu clock= 7.84E-01 peak memory=      64 mb
+ dcop: begin dcop, cpu clock= 7.84E-01
+ dcop: end dcop, cpu clock= 8.05E-01 peak memory=      64 mb tot_iter=     256
+ output: C:\mdsy\proj1\cascode_amplifier_h.ac7
+ sweep: ac ac0    begin, #sweeps=  91 cpu clock= 8.06E-01
+ ac: frequency=1.00e+00
+ ac: frequency=7.94e+00
+ ac: frequency=6.31e+01
+ ac: frequency=5.01e+02
+ ac: frequency=3.98e+03
+ ac: frequency=3.16e+04
+ ac: frequency=2.51e+05
+ ac: frequency=2.00e+06
+ ac: frequency=1.58e+07
+ ac: frequency=1.26e+08
+ ac: frequency=1.00e+09
+ sweep: ac ac0    end, cpu clock= 8.10E-01 peak memory=      64 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

@@ -1,0 +1,30 @@
+* "simulator" "HSPICE" 
+* "version" "O-2018.09-SP2 win64"
+* "format" "HSP"
+* "rundate" "18:56:21 12/06/2021 "
+* "netlist" "acmr.sp "
+* "runtitle" ""
+* time =    0.            
+* temperature =  100.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ n11 = 859.8272m       
++ n12 = 859.8272m       
++ n21 = 877.8411m       
++ n22 = 877.8411m       
++ vcm = 872.0000m       
++ vcm2 = 872.0000m       
++ vdd =   1.7000        
++ vin11 = 872.0000m       
++ vin12 = 872.0000m       
++ vin21 = 872.0000m       
++ vin22 = 872.0000m       
++ xamp1.n3 = 223.6467m       
++ xamp1.n4 =   1.0325        
++ xamp1.n5 = 717.9998m       
++ xamp2.n3 = 223.6467m       
++ xamp2.n4 =   1.0325        
++ xamp2.n5 = 717.9998m       
+***   END: Saved Operating Point ***                     

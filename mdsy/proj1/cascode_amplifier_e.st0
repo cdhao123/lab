@@ -1,0 +1,56 @@
+****** HSPICE -- O-2018.09-SP2 win64 (Feb 25 2019) ******
+Input File: cascode_amplifier_e.sp
+lic:
+lic: FLEXlm: SDK_11.7.3
+lic: USER:   admin                HOSTNAME: DESKTOP-3KO7170
+lic: HOSTID: "d83bbfb49802"       PID:      6108
+lic: Using FLEXlm license file:
+lic: 27000@DESKTOP-3KO7170
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 30-dec-2029/2019.2019
+lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@DESKTOP-3KO7170
+lic:
+
+ init: begin read circuit files, cpu clock= 4.80E-02
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/behave/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/AD/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/XILINX/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/TLINE/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/TI/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/SIGNET/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/PCI/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/LIN_TECH/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/PET/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/DI0/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/COMLINE/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/BURR_BRM/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/BJT/
+       option list
+       option node
+       option brief =     1.00
+       option post =     3.00
+ init: end read circuit files, cpu clock= 5.60E-02 peak memory=      61 mb
+ init: begin check errors, cpu clock= 5.60E-02
+ init: end check errors, cpu clock= 6.20E-02 peak memory=      61 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 6.20E-02
+       establish matrix -- done, cpu clock= 6.20E-02 peak memory=      61 mb
+       re-order matrix -- done, cpu clock= 6.20E-02 peak memory=      61 mb
+ init: end setup matrix, cpu clock= 6.30E-02 peak memory=      61 mb
+ dcop: begin dcop, cpu clock= 6.30E-02
+ dcop: end dcop, cpu clock= 7.30E-02 peak memory=      61 mb tot_iter=     249
+ output: C:\mdsy\proj1\cascode_amplifier_e.ac0
+ sweep: ac ac0    begin, #sweeps=  91 cpu clock= 7.30E-02
+ ac: frequency=1.00e+00
+ ac: frequency=7.94e+00
+ ac: frequency=6.31e+01
+ ac: frequency=5.01e+02
+ ac: frequency=3.98e+03
+ ac: frequency=3.16e+04
+ ac: frequency=2.51e+05
+ ac: frequency=2.00e+06
+ ac: frequency=1.58e+07
+ ac: frequency=1.26e+08
+ ac: frequency=1.00e+09
+ sweep: ac ac0    end, cpu clock= 7.50E-02 peak memory=      61 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

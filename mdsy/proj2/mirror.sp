@@ -1,0 +1,17 @@
+
+.PARAM VDD = 1.8
+M1 VIN VIN 0 0 NCH L = 1U W = 10U
+M2 VIN VIN VDD VDD PCH L = 1U W = 10U
+VIN VIN 0 0
+VDD VDD 0 1.8
+
+.DC VIN 0 1.8 0.001
+* .DC WP 5U 10U 0.1U
+
+.PRINT IDSN = par('LX4(M1)') VTHN = par('LV9(M1)') IDSP = par('LX4(M2)') VTHP = par('LV9(M2)')
+
+.OPTION LIST NODE BRIEF=1 
+.OPTION POST=3
+
+.lib 'C:\mdsy\rf018.l' TT
+.END

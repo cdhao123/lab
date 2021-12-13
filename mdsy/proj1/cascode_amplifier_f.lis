@@ -1,0 +1,337 @@
+ ****** HSPICE -- O-2018.09-SP2 win64 (Feb 25 2019) ******                      
+  Copyright (c) 1986 - 2021 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: cascode_amplifier_f.sp                                            
+  Command line options: C:\synopsys\Hspice_O-2018.09-SP2\WIN64\hspice.com -i cascode_amplifier_f.sp -o C:\mdsy\proj1\cascode_amplifier_f.lis
+  Start time: Fri Dec  3 09:16:13 2021
+  lic:  
+  lic: FLEXlm: SDK_11.7.3 
+  lic: USER:   admin                HOSTNAME: DESKTOP-3KO7170 
+  lic: HOSTID: "d83bbfb49802"       PID:      8740 
+  lic: Using FLEXlm license file: 
+  lic: 27000@DESKTOP-3KO7170 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2029/2019.2019 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@DESKTOP-3KO7170 
+  lic:   
+  **info** (cascode_amplifier_f.sp:31) DC voltage reset to initial transient source value in source 0:vin. new dc=0.1152D+01
+ 
+
+  
+      
+
+Element variations(Local):   element              parameter
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+ **info** dc convergence successful at GMINDC ramping method 
+1****** HSPICE -- O-2018.09-SP2 win64 (Feb 25 2019) ******                      
+ ******  
+ 
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:vb1     = 850.2462m 0:vb2     = 842.7342m 0:vb3     =   1.1117 
+ +0:vb4     = 625.3065m 0:vdd     =   1.8000  0:vin     =   1.1517 
+ +0:vm10s   =   1.5852  0:vm13s   =   1.5808  0:vm15d   = 186.4374m
+ +0:vm17s   =   1.5779  0:vm2d    = 595.3274m 0:vm5d    = 191.9251m
+ +0:vm7s    =   1.5819  0:vout    = 927.3912m
+
+
+          ***** job concluded
+ ******  
+ 
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     8
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      51 # elements   =      22
+  # resistors   =       0 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
+  # curr_srcs   =       1 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      18 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1         249
+  transient          5.13   500000001         672         336 rev=        30
+  readin             0.03
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         64.26 megabytes
+           total cpu time            5.19 seconds
+           total elapsed time        5.21 seconds
+           job started at     09:16:13 12/03/2021
+           job ended   at     09:16:18 12/03/2021
+
+
+  **info** (cascode_amplifier_f.sp:31) DC voltage reset to initial transient source value in source 0:vin. new dc=0.1152D+01
+  
+      
+
+Element variations(Local):   element              parameter
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+ **info** dc convergence successful at GMINDC ramping method 
+ ******  
+ 
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:vb1     = 850.2462m 0:vb2     = 842.7342m 0:vb3     =   1.1117 
+ +0:vb4     = 625.3065m 0:vdd     =   1.8000  0:vin     =   1.1517 
+ +0:vm10s   =   1.5852  0:vm13s   =   1.5808  0:vm15d   = 186.4374m
+ +0:vm17s   =   1.5779  0:vm2d    = 595.3274m 0:vm5d    = 191.9251m
+ +0:vm7s    =   1.5819  0:vout    = 927.3912m
+
+
+          ***** job concluded
+ ******  
+ 
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  Circuit Statistics  ******
+  # nodes       =      51 # elements   =      22
+  # resistors   =       0 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
+  # curr_srcs   =       1 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      18 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1         249
+  transient          5.19   500000001         944         472 rev=        31
+  readin             0.02
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         65.02 megabytes
+           total cpu time            5.22 seconds
+           total elapsed time        5.24 seconds
+           job started at     09:16:13 12/03/2021
+           job ended   at     09:16:23 12/03/2021
+
+
+  **info** (cascode_amplifier_f.sp:31) DC voltage reset to initial transient source value in source 0:vin. new dc=0.1152D+01
+  
+      
+
+Element variations(Local):   element              parameter
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+ **info** dc convergence successful at GMINDC ramping method 
+ ******  
+ 
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:vb1     = 850.2462m 0:vb2     = 842.7342m 0:vb3     =   1.1117 
+ +0:vb4     = 625.3065m 0:vdd     =   1.8000  0:vin     =   1.1517 
+ +0:vm10s   =   1.5852  0:vm13s   =   1.5808  0:vm15d   = 186.4374m
+ +0:vm17s   =   1.5779  0:vm2d    = 595.3274m 0:vm5d    = 191.9251m
+ +0:vm7s    =   1.5819  0:vout    = 927.3912m
+
+
+          ***** job concluded
+ ******  
+ 
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  Circuit Statistics  ******
+  # nodes       =      51 # elements   =      22
+  # resistors   =       0 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
+  # curr_srcs   =       1 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      18 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1         249
+  transient          5.20   500000001        1066         533 rev=        28
+  readin             0.02
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         65.10 megabytes
+           total cpu time            5.23 seconds
+           total elapsed time        5.24 seconds
+           job started at     09:16:13 12/03/2021
+           job ended   at     09:16:28 12/03/2021
+
+
+  **info** (cascode_amplifier_f.sp:31) DC voltage reset to initial transient source value in source 0:vin. new dc=0.1152D+01
+  
+      
+
+Element variations(Local):   element              parameter
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+ **info** dc convergence successful at GMINDC ramping method 
+ ******  
+ 
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:vb1     = 850.2462m 0:vb2     = 842.7342m 0:vb3     =   1.1117 
+ +0:vb4     = 625.3065m 0:vdd     =   1.8000  0:vin     =   1.1517 
+ +0:vm10s   =   1.5852  0:vm13s   =   1.5808  0:vm15d   = 186.4374m
+ +0:vm17s   =   1.5779  0:vm2d    = 595.3274m 0:vm5d    = 191.9251m
+ +0:vm7s    =   1.5819  0:vout    = 927.3912m
+
+
+          ***** job concluded
+ ******  
+ 
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  Circuit Statistics  ******
+  # nodes       =      51 # elements   =      22
+  # resistors   =       0 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
+  # curr_srcs   =       1 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      18 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1         249
+  transient          5.19   500000001        1365         680 rev=        18
+  readin             0.02
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         65.26 megabytes
+           total cpu time            5.22 seconds
+           total elapsed time        5.24 seconds
+           job started at     09:16:13 12/03/2021
+           job ended   at     09:16:34 12/03/2021
+
+
+  **info** (cascode_amplifier_f.sp:31) DC voltage reset to initial transient source value in source 0:vin. new dc=0.1152D+01
+  
+      
+
+Element variations(Local):   element              parameter
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+ **info** dc convergence successful at GMINDC ramping method 
+ ******  
+ 
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:vb1     = 850.2462m 0:vb2     = 842.7342m 0:vb3     =   1.1117 
+ +0:vb4     = 625.3065m 0:vdd     =   1.8000  0:vin     =   1.1517 
+ +0:vm10s   =   1.5852  0:vm13s   =   1.5808  0:vm15d   = 186.4374m
+ +0:vm17s   =   1.5779  0:vm2d    = 595.3274m 0:vm5d    = 191.9251m
+ +0:vm7s    =   1.5819  0:vout    = 927.3912m
+
+
+          ***** job concluded
+ ******  
+ 
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  Circuit Statistics  ******
+  # nodes       =      51 # elements   =      22
+  # resistors   =       0 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
+  # curr_srcs   =       1 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      18 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1         249
+  transient          5.13   500000001        1758         863 rev=        95
+  readin             0.02
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         65.26 megabytes
+           total cpu time            5.16 seconds
+           total elapsed time        5.17 seconds
+           job started at     09:16:13 12/03/2021
+           job ended   at     09:16:39 12/03/2021
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.02(s)

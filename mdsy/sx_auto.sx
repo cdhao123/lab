@@ -1,0 +1,13 @@
+### SPICE Explorer session file (version 2007.1 build 0702) ###
+### saved at 15:58:15 on Fri Nov 26 2021 ###
+wdf 0 "C:/mdsy/proj1/cascode_amplifier.sw0" load=used 
+cvt_begin
+  cvt_expr 0 1 'derivative(0|v(vout)' 'derivative("0|v(vout")' 
+cvt_end
+scalar list
+waveview_begin 1  stack  offset=0 name_b=81 mntr_b=81 geo=648:90:700:400 
+  panel_begin linear pidx=0 spath=true 
+    line src=derived cvtidx=0 disp=show 
+    line src=wdf fidx=0 "name=v(vout" disp=show 
+  panel_end
+waveview_end

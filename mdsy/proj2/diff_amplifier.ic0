@@ -1,0 +1,22 @@
+* "simulator" "HSPICE" 
+* "version" "O-2018.09-SP2 win64"
+* "format" "HSP"
+* "rundate" "18:10:51 12/06/2021 "
+* "netlist" "diff_amplifier.sp "
+* "runtitle" ""
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ n1 = 995.3887m       
++ n2 = 995.3887m       
++ n3 = 242.2386m       
++ n4 =   1.1366        
++ n5 = 680.9398m       
++ vcm = 872.0000m       
++ vdd =   1.8000        
++ vin1 = 872.0000m       
++ vin2 = 872.0000m       
+***   END: Saved Operating Point ***                     

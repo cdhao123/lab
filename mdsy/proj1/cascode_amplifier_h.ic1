@@ -1,0 +1,27 @@
+* "simulator" "HSPICE" 
+* "version" "O-2018.09-SP2 win64"
+* "format" "HSP"
+* "rundate" "18:38:30 12/03/2021 "
+* "netlist" "cascode_amplifier_h.sp "
+* "runtitle" ""
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ vb1 = 827.3049m       
++ vb2 = 842.7342m       
++ vb3 =   1.1117        
++ vb4 = 616.1508m       
++ vdd =   1.8000        
++ vin =   1.1540        
++ vm10s =   1.5852        
++ vm13s =   1.5805        
++ vm15d = 172.7795m       
++ vm17s =   1.5778        
++ vm2d = 595.3274m       
++ vm5d = 175.0177m       
++ vm7s =   1.5818        
++ vout = 921.4709m       
+***   END: Saved Operating Point ***                     
