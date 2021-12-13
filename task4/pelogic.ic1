@@ -1,7 +1,7 @@
 * "simulator" "HSPICE" 
 * "version" "O-2018.09-SP2 win64"
 * "format" "HSP"
-* "rundate" "19:44:56 12/11/2021 "
+* "rundate" "19:49:51 12/13/2021 "
 * "netlist" "pelogic.sp "
 * "runtitle" ""
 * time =    0.            

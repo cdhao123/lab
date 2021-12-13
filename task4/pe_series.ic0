@@ -1,8 +1,8 @@
 * "simulator" "HSPICE" 
 * "version" "O-2018.09-SP2 win64"
 * "format" "HSP"
-* "rundate" "19:05:36 12/13/2021 "
-* "netlist" "chargeshare.sp "
+* "rundate" "19:47:31 12/13/2021 "
+* "netlist" "pe_series.sp "
 * "runtitle" ""
 * time =    0.            
 * temperature =   25.0000        
@@ -15,6 +15,8 @@
 + clk =   0.            
 + vdd =   1.0000        
 + x =  53.3933m       
++ x2 = 889.8238m       
 + y = 999.9827m       
++ y2 = 999.9724m       
 + z =  15.8640m       
 ***   END: Saved Operating Point ***                     

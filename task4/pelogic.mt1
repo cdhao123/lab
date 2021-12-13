@@ -1,4 +1,4 @@
 $DATA1 SOURCE='HSPICE' VERSION='O-2018.09-SP2 win64' PARAM_COUNT=0
 .TITLE ''
  thl              tlh              temper           alter#          
-  6.027e-09        8.044e-09         25.0000        2               
+  1.403e-08        1.607e-08         25.0000        2               

@@ -5,20 +5,20 @@
   with the terms and conditions of a written license agreement with
   Synopsys, Inc. All other use, reproduction, or distribution of
   this software is strictly prohibited.
-  Input File: chargeshare.sp                                                    
-  Command line options: C:\synopsys\Hspice_O-2018.09-SP2\WIN64\hspice.com -i chargeshare.sp -o D:\analogCMOS_lab\task4\chargeshare.lis
-  Start time: Mon Dec 13 19:05:36 2021
+  Input File: pe_series.sp                                                      
+  Command line options: C:\synopsys\Hspice_O-2018.09-SP2\WIN64\hspice.com -i pe_series.sp -o D:\analogCMOS_lab\task4\pe_series.lis
+  Start time: Mon Dec 13 19:47:31 2021
   lic:  
   lic: FLEXlm: SDK_11.7.3 
   lic: USER:   Zz                   HOSTNAME: DESKTOP-GQBECKU 
-  lic: HOSTID: d8bbc14f4b4b         PID:      12352 
+  lic: HOSTID: d8bbc14f4b4b         PID:      9392 
   lic: Using FLEXlm license file: 
   lic: 27000@DESKTOP-GQBECKU 
   lic: Checkout 1 hspice 
   lic: License/Maintenance for hspice will expire on 30-dec-2029/2019.2019 
   lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@DESKTOP-GQBECKU 
   lic:   
-  **info** (chargeshare.sp:11) DC voltage reset to initial transient source value in source 0:va. new dc=0.0000D+00
+  **info** (pe_series.sp:16) DC voltage reset to initial transient source value in source 0:va. new dc=0.0000D+00
   
       
 
@@ -38,15 +38,15 @@ Element variations(Local):   element              parameter
     node    =voltage      node    =voltage      node    =voltage
 
  +0:a       =   0.      0:b       =   0.      0:clk     =   0.     
- +0:vdd     =   1.0000  0:x       =  53.3933m 0:y       = 999.9827m
- +0:z       =  15.8640m
+ +0:vdd     =   1.0000  0:x       =  53.3933m 0:x2      = 889.8238m
+ +0:y       = 999.9827m 0:y2      = 999.9724m 0:z       =  15.8640m
 
  ******
  
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- thl=  16.0259n
- tlh=  20.0491n
+ thl=  12.0034n
+ tlh=  12.0200n
 
           ***** job concluded
  ******  
@@ -62,12 +62,12 @@ Element variations(Local):   element              parameter
 
 
   ******  Circuit Statistics  ******
-  # nodes       =      24 # elements   =       9
+  # nodes       =      38 # elements   =      12
   # resistors   =       0 # capacitors =       1 # inductors   =       0
   # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
   # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
   # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
-  # jfets       =       0 # mosfets    =       4 # U elements  =       0
+  # jfets       =       0 # mosfets    =       7 # U elements  =       0
   # T elements  =       0 # W elements =       0 # B elements  =       0
   # S elements  =       0 # P elements =       0 # va device   =       0
   # vector_srcs =       0 # N elements =       0
@@ -77,19 +77,19 @@ Element variations(Local):   element              parameter
 
   analysis           time    # points   tot. iter  conv.iter
   op point           0.00           1          18
-  transient          0.00       25001         494         206 rev=        22
+  transient          0.01       16001         671         273 rev=        37
   readin             0.01
   errchk             0.00
   setup              0.00
   output             0.00
 
 
-           peak memory used         60.63 megabytes
-           total cpu time            0.01 seconds
-           total elapsed time        0.03 seconds
-           job started at     19:05:36 12/13/2021
-           job ended   at     19:05:36 12/13/2021
+           peak memory used         60.60 megabytes
+           total cpu time            0.02 seconds
+           total elapsed time        0.04 seconds
+           job started at     19:47:31 12/13/2021
+           job ended   at     19:47:31 12/13/2021
 
 
   lic: Release hspice token(s) 
- lic: total license checkout elapse time:        0.01(s)
+ lic: total license checkout elapse time:        0.02(s)

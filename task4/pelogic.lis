@@ -7,11 +7,11 @@
   this software is strictly prohibited.
   Input File: pelogic.sp                                                        
   Command line options: C:\synopsys\Hspice_O-2018.09-SP2\WIN64\hspice.com -i pelogic.sp -o D:\analogCMOS_lab\task4\pelogic.lis
-  Start time: Sat Dec 11 19:44:56 2021
+  Start time: Mon Dec 13 19:49:51 2021
   lic:  
   lic: FLEXlm: SDK_11.7.3 
   lic: USER:   Zz                   HOSTNAME: DESKTOP-GQBECKU 
-  lic: HOSTID: d8bbc14f4b4b         PID:      9280 
+  lic: HOSTID: d8bbc14f4b4b         PID:      14044 
   lic: Using FLEXlm license file: 
   lic: 27000@DESKTOP-GQBECKU 
   lic: Checkout 1 hspice 
@@ -46,8 +46,8 @@ Element variations(Local):   element              parameter
  
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- thl=   6.0213n
- tlh=   8.0331n
+ thl=  12.0059n
+ tlh=  12.0180n
 
           ***** job concluded
  ******  
@@ -78,18 +78,18 @@ Element variations(Local):   element              parameter
 
   analysis           time    # points   tot. iter  conv.iter
   op point           0.00           1          18
-  transient          0.00       16001         548         233 rev=        16
+  transient          0.00       20001         657         279 rev=        19
   readin             0.01
   errchk             0.00
   setup              0.00
   output             0.00
 
 
-           peak memory used         61.65 megabytes
+           peak memory used         61.66 megabytes
            total cpu time            0.01 seconds
            total elapsed time        0.03 seconds
-           job started at     19:44:56 12/11/2021
-           job ended   at     19:44:56 12/11/2021
+           job started at     19:49:51 12/13/2021
+           job ended   at     19:49:51 12/13/2021
 
 
   **info** (pelogic.sp:11) DC voltage reset to initial transient source value in source 0:va. new dc=0.0000D+00
@@ -118,8 +118,8 @@ Element variations(Local):   element              parameter
  
 
  ****** transient analysis tnom=  25.000 temp=  25.000 ******
- thl=   6.0265n
- tlh=   8.0440n
+ thl=  14.0306n
+ tlh=  16.0691n
 
           ***** job concluded
  ******  
@@ -143,18 +143,18 @@ Element variations(Local):   element              parameter
 
   analysis           time    # points   tot. iter  conv.iter
   op point           0.00           1          18
-  transient          0.00       16001         579         246 rev=        31
+  transient          0.01       20001         740         313 rev=        44
   readin             0.00
   errchk             0.00
   setup              0.00
   output             0.00
 
 
-           peak memory used         61.65 megabytes
+           peak memory used         61.66 megabytes
            total cpu time            0.01 seconds
            total elapsed time        0.02 seconds
-           job started at     19:44:56 12/11/2021
-           job ended   at     19:44:56 12/11/2021
+           job started at     19:49:51 12/13/2021
+           job ended   at     19:49:51 12/13/2021
 
 
   lic: Release hspice token(s) 
