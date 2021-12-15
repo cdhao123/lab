@@ -1,0 +1,103 @@
+ ****** HSPICE -- O-2018.09-SP2 win64 (Feb 25 2019) ******                      
+  Copyright (c) 1986 - 2021 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: unfooted.sp                                                       
+  Command line options: C:\synopsys\Hspice_O-2018.09-SP2\WIN64\hspice.com -i unfooted.sp -o D:\analogCMOS_lab\task4\unfooted.lis
+  Start time: Wed Dec 15 16:54:41 2021
+  lic:  
+  lic: FLEXlm: SDK_11.7.3 
+  lic: USER:   Zz                   HOSTNAME: DESKTOP-GQBECKU 
+  lic: HOSTID: d8bbc14f4b4b         PID:      6888 
+  lic: Using FLEXlm license file: 
+  lic: 27000@DESKTOP-GQBECKU 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 30-dec-2029/2019.2019 
+  lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@DESKTOP-GQBECKU 
+  lic:   
+  **info** (unfooted.sp:22) DC voltage reset to initial transient source value in source 0:va. new dc=0.0000D+00
+  **warning** has discontinuity at the junction of repeated pwl source . A rise/fall time of 1e-15 second is added
+  **warning** has discontinuity at the junction of repeated pwl source . A rise/fall time of 1e-15 second is added
+  **warning** has discontinuity at the junction of repeated pwl source . A rise/fall time of 1e-15 second is added
+  
+      
+  **warning** has discontinuity at the junction of repeated pwl source . A rise/fall time of 1e-15 second is added
+  **warning** has discontinuity at the junction of repeated pwl source . A rise/fall time of 1e-15 second is added
+  **warning** has discontinuity at the junction of repeated pwl source . A rise/fall time of 1e-15 second is added
+
+Element variations(Local):   element              parameter
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+ **info** dc convergence successful at Newton-Raphson method 
+1****** HSPICE -- O-2018.09-SP2 win64 (Feb 25 2019) ******                      
+ ******  
+ 
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:a       =   0.      0:b       =   0.      0:c       =   0.     
+ +0:clk     =   0.      0:clkb    = 999.9602m 0:d       =   0.     
+ +0:vdd     =   1.0000  0:x       =  63.7819m 0:x2      =  69.1635m
+ +0:y       =   3.9817u 0:y1      = 999.9687m 0:y2      = 999.9833m
+ +0:z       =  26.5428m 0:z3      = 947.2445m
+
+ ******
+ 
+
+ ****** transient analysis tnom=  25.000 temp=  25.000 ******
+ thl=  64.0498n
+ tlh=  62.0979n
+
+          ***** job concluded
+ ******  
+ 
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :    12
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      63 # elements   =      19
+  # resistors   =       0 # capacitors =       1 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       6
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      12 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1          19
+  transient          0.05       66001        3281        1366 rev=       181
+  readin             0.01
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used         60.60 megabytes
+           total cpu time            0.06 seconds
+           total elapsed time        0.07 seconds
+           job started at     16:54:41 12/15/2021
+           job ended   at     16:54:41 12/15/2021
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.01(s)

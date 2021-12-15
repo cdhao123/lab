@@ -1,0 +1,27 @@
+* "simulator" "HSPICE" 
+* "version" "O-2018.09-SP2 win64"
+* "format" "HSP"
+* "rundate" "16:54:41 12/15/2021 "
+* "netlist" "unfooted.sp "
+* "runtitle" ""
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   0.            
++ b =   0.            
++ c =   0.            
++ clk =   0.            
++ clkb = 999.9602m       
++ d =   0.            
++ vdd =   1.0000        
++ x =  63.7819m       
++ x2 =  69.1635m       
++ y =   3.9817u       
++ y1 = 999.9687m       
++ y2 = 999.9833m       
++ z =  26.5428m       
++ z3 = 947.2445m       
+***   END: Saved Operating Point ***                     

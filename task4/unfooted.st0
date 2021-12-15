@@ -1,0 +1,55 @@
+****** HSPICE -- O-2018.09-SP2 win64 (Feb 25 2019) ******
+Input File: unfooted.sp
+lic:
+lic: FLEXlm: SDK_11.7.3
+lic: USER:   Zz                   HOSTNAME: DESKTOP-GQBECKU
+lic: HOSTID: d8bbc14f4b4b         PID:      6888
+lic: Using FLEXlm license file:
+lic: 27000@DESKTOP-GQBECKU
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 30-dec-2029/2019.2019
+lic: 1(in_use)/99(total) FLOATING license(s) on SERVER 27000@DESKTOP-GQBECKU
+lic:
+
+ init: begin read circuit files, cpu clock= 2.00E-02
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/behave/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/AD/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/XILINX/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/TLINE/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/TI/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/SIGNET/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/PCI/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/LIN_TECH/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/PET/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/DI0/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/COMLINE/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/BURR_BRM/
+       option search = C:/synopsys/Hspice_O-2018.09-SP2/parts/BJT/
+       option list
+       option node
+       option brief =     1.00
+       option post =     3.00
+ init: end read circuit files, cpu clock= 2.20E-02 peak memory=      59 mb
+ init: begin check errors, cpu clock= 2.20E-02
+ init: end check errors, cpu clock= 2.40E-02 peak memory=      60 mb
+ init: begin setup matrix, pivot=     0 cpu clock= 2.40E-02
+       establish matrix -- done, cpu clock= 2.40E-02 peak memory=      60 mb
+       re-order matrix -- done, cpu clock= 2.40E-02 peak memory=      60 mb
+ init: end setup matrix, cpu clock= 2.40E-02 peak memory=      60 mb
+ dcop: begin dcop, cpu clock= 2.40E-02
+ dcop: end dcop, cpu clock= 2.50E-02 peak memory=      60 mb tot_iter=      19
+ output: D:\analogCMOS_lab\task4\unfooted.mt0
+ sweep: tran tran0    begin, stop_t=  6.60E-08 #sweeps=**** cpu clock= 2.60E-02
+ tran: time= 6.7298E-09 tot_iter=     204 conv_iter=      84 cpu clock= 2.80E-02
+ tran: time= 1.3703E-08 tot_iter=     474 conv_iter=     198 cpu clock= 3.30E-02
+ tran: time= 1.9916E-08 tot_iter=     787 conv_iter=     328 cpu clock= 3.80E-02
+ tran: time= 2.6501E-08 tot_iter=    1173 conv_iter=     492 cpu clock= 4.30E-02
+ tran: time= 3.3202E-08 tot_iter=    1502 conv_iter=     630 cpu clock= 4.80E-02
+ tran: time= 3.9724E-08 tot_iter=    1795 conv_iter=     759 cpu clock= 5.20E-02
+ tran: time= 4.6248E-08 tot_iter=    2191 conv_iter=     929 cpu clock= 5.80E-02
+ tran: time= 5.2971E-08 tot_iter=    2527 conv_iter=    1067 cpu clock= 6.30E-02
+ tran: time= 5.9653E-08 tot_iter=    2875 conv_iter=    1210 cpu clock= 6.80E-02
+ tran: time= 6.6000E-08 tot_iter=    3278 conv_iter=    1365 cpu clock= 7.40E-02
+ sweep: tran tran0    end, cpu clock= 7.40E-02 peak memory=      60 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)
