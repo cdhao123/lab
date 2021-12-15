@@ -1,0 +1,28 @@
+* "simulator" "HSPICE" 
+* "version" "O-2018.09-SP2 win64"
+* "format" "HSP"
+* "rundate" "15:26:12 12/15/2021 "
+* "netlist" "npdormino.sp "
+* "runtitle" ""
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   0.            
++ b =   0.            
++ c =   0.            
++ clk =   0.            
++ clkb = 999.9602m       
++ d =   0.            
++ vdd =   1.0000        
++ x =  63.7819m       
++ x2 =  69.1635m       
++ y =   3.8602u       
++ y1 = 999.9687m       
++ y2 = 999.9833m       
++ z =  26.5428m       
++ z2 = 981.2114m       
++ z3 = 930.1058m       
+***   END: Saved Operating Point ***                     
